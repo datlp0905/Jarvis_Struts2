@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+#my-btn-dropdown {
+    margin-right: 20px;
+}
+.break-line {
+    height: 5px;
+}
+.img-equipment {
+    height: 350px;
+    overflow: hidden;
+}
+.img-equipment img {
+    transition: 1s;
+}
+.img-equipment img:hover{
+    transform: scale(1.1);
+}
+.img-equipment-link {
+    background-color: rgba(116,113,113,0.59);
+    color: white;
+}
+.avatar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 200px;
+    transition: 1s;
+}
+.avatar:hover {
+    transform: scale(1.05);
+}
+.avatar label {
+    font-size: 20px;
+}
+.img-avatar{
+    height: 200px !important;
+}
+
+#member-header {
+    background-image: url(../..//img/member-header.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+}
+.border-bottom {
+    border-bottom: 1px solid black;
+
+}
+.member-title {
+    font-weight: bold;
+    color: dimgray;
+    line-height: 21px;
+}
+.mission {
+    min-height: 100px;
+    margin-top: 10px;
+    border: 1px #cccccc solid;
+    transition: 1s;
+}
+.mission:hover{
+    transform: scale(1.03);
+}
+.mission-title {
+    font-size: 20px;
+    color: white;
+}
+#member2, #member3, #member4 {
+    display: none;
+}
+#index {
+    background-image: url(../../img/avenger.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 380px;
+    border-radius: 50px;
+}
+.mybox {
+    background-color: rgba(96, 89, 89, 0.8);
+    margin-top: 30px;
+    height: 300px;
+    border-radius: 100%;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+
+.mybox:hover {
+    background-color: rgba(200, 206, 211, 0.5);
+}
+.mybox div {
+    padding-top: 40px;
+}

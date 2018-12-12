@@ -1,0 +1,44 @@
+function resetPassword() {
+    var password = document.getElementById("resetPassword_password").value;
+    var messagePassword = document.getElementById("password");
+    var confirm = document.getElementById("resetPassword_confirm").value;
+    var messageConfirm = document.getElementById("confirm");
+    var check = true;
+    if (password.length === 0) {
+        check = false;
+        messagePassword.innerHTML = "Password is required!";
+    } else {
+        messagePassword.innerHTML = "";
+    }
+    if (confirm.length.length === 0) {
+        check = false;
+        messageConfirm.innerHTML = "Confirm password is required!";
+    } else if (confirm !== password) {
+        check = false;
+        messageConfirm.innerHTML = "Confirm must match password!";
+    }
+    return check;
+}
+
+
+==============================================
+<form id="resetPassword" name="resetPassword" onsubmit="return resetPassword()" action="/DatLPSE62823_Jarvis/resetPassword.action" method="post">
+                                            <input type="hidden" name="username" value="captain" id="resetPassword_username"/>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-lock "></i></span>
+                                                    <input type="password" name="password" id="resetPassword_password" class="form-control" placeholder="New password"/>
+                                                </div>
+                                                <span class="text-danger" id="password"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-lock "></i></span>
+                                                    <input type="password" name="confirm" id="resetPassword_confirm" class="form-control" placeholder="Confirm password"/>
+                                                </div>
+                                                <span class="text-danger" id="confirm"></span>
+                                            </div>
+                                                <button type="submit" class="btn btn-info btn-block">
+                                                    Reset
+                                                </button>
+                                        </form>
