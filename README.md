@@ -4,5 +4,5 @@
 # - HTML, CSS, Bootstrap
 # - MVC2 Architecture
 # - Authorizing by using Filter
-# - Database: MySQL (JDBC)
+# - Database: SQL Server (JDBC)
 # - Server: Apache Tomcat 8.0.27.0
